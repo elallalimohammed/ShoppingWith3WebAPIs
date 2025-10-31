@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moal\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MyEnvironment.postman_environment.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moal\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MultiApiSolution Tests.postman_collection.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\userswebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|solutionrelative:userswebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\userswebapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|solutionrelative:userswebapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\userswebapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|solutionrelative:userswebapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\orderswebapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|solutionrelative:orderswebapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\orderswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|solutionrelative:orderswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\userswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|solutionrelative:userswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\orderswebapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|solutionrelative:orderswebapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\orderswebapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|solutionrelative:orderswebapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\paymentswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|solutionrelative:paymentswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\orderswebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C872045A-EE3D-422B-972B-BFFB89B684BF}|OrdersWebAPI\\OrdersWebAPI.csproj|solutionrelative:orderswebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\paymentswebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|solutionrelative:paymentswebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\userswebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B6DD5D96-4871-4B2B-910F-552E7F78F5AA}|UsersWebAPI\\UsersWebAPI.csproj|solutionrelative:userswebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\paymentswebapi\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|solutionrelative:paymentswebapi\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\paymentswebapi\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|solutionrelative:paymentswebapi\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|c:\\users\\moal\\source\\repos\\shoppingwith3webapis\\paymentswebapi\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AAE2B8D-D502-4538-8E2F-9420AE0C74E1}|PaymentsWebAPI\\PaymentsWebAPI.csproj|solutionrelative:paymentswebapi\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyEnvironment.postman_environment.json",
+              "DocumentMoniker": "C:\\Users\\moal\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MyEnvironment.postman_environment.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MyEnvironment.postman_environment.json",
+              "ToolTip": "C:\\Users\\moal\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MyEnvironment.postman_environment.json",
+              "RelativeToolTip": "..\\..\\..\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MyEnvironment.postman_environment.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-31T15:24:36.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MultiApiSolution Tests.postman_collection.json",
+              "DocumentMoniker": "C:\\Users\\moal\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MultiApiSolution Tests.postman_collection.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MultiApiSolution Tests.postman_collection.json",
+              "ToolTip": "C:\\Users\\moal\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MultiApiSolution Tests.postman_collection.json",
+              "RelativeToolTip": "..\\..\\..\\Documents\\Teaching_AArhus\\Undervisning efter\u00E5r 2025\\Agil udvikling\\Module 6_7 Postman\\MultiApiSolution Tests.postman_collection.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-31T15:14:03.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "OrdersWebAPI\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "OrdersWebAPI\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAACYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:03:55.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "UsersWebAPI\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "UsersWebAPI\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAQwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:02:55.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "OrdersWebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Program.cs",
+              "RelativeToolTip": "OrdersWebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:23:43.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "UsersWebAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "UsersWebAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:01:37.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "UsersWebAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Models\\User.cs",
+              "RelativeToolTip": "UsersWebAPI\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:02:13.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "OrdersWebAPI\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "OrdersWebAPI\\Repositories\\OrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:06:35.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "OrdersWebAPI\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Models\\Order.cs",
+              "RelativeToolTip": "OrdersWebAPI\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:07:18.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "PaymentsWebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Program.cs",
+              "RelativeToolTip": "PaymentsWebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:18:11.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "UsersWebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Program.cs",
+              "RelativeToolTip": "UsersWebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:13:14.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "OrdersWebAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\OrdersWebAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "OrdersWebAPI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-26T09:56:06.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PaymentsWebAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PaymentsWebAPI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-26T10:00:38.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "UsersWebAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\UsersWebAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "UsersWebAPI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-26T09:57:06.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "PaymentsWebAPI\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "PaymentsWebAPI\\Controllers\\PaymentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:17:19.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "PaymentsWebAPI\\Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Models\\Payment.cs",
+              "RelativeToolTip": "PaymentsWebAPI\\Models\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:07:02.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Repositories\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "PaymentsWebAPI\\Repositories\\PaymentRepository.cs",
+              "ToolTip": "C:\\Users\\moal\\source\\repos\\ShoppingWith3WebAPIs\\PaymentsWebAPI\\Repositories\\PaymentRepository.cs",
+              "RelativeToolTip": "PaymentsWebAPI\\Repositories\\PaymentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T10:05:34.389Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 455,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 455,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

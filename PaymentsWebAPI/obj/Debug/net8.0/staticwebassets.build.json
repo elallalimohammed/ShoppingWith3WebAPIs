@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pcBQR99kfPVliVNg32BFG6s1Hr6Ppc8EcczHhRwutkM=",
+  "Source": "PaymentsWebAPI",
+  "BasePath": "_content/PaymentsWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

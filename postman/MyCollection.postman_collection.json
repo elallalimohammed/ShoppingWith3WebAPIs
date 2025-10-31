@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "2edc891f-cee7-4c06-bfc6-0cf5470ceb85",
+		"name": "MultiApiSolution Tests",
+		"description": "Postman collection for testing MultiApiSolution APIs (Users, Payments, Orders).",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9578175"
+	},
+	"item": [
+		{
+			"name": "UsersWebAPI",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"id\":1,\n    \"name\": \"Alice\",\n    \"email\": \"alice@example.com\"\n}"
+						},
+						"url": {
+							"raw": "{{BaseUrl1}}/api/users",
+							"host": [
+								"{{BaseUrl1}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl1}}/api/users/1",
+							"host": [
+								"{{BaseUrl1}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl1}}/api/users",
+							"host": [
+								"{{BaseUrl1}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl1}}/api/users/1",
+							"host": [
+								"{{BaseUrl1}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
