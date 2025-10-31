@@ -1,4 +1,4 @@
-name: Run Postman API Tests
+name: Node.js CI
 
 on:
   push:
@@ -7,26 +7,21 @@ on:
     branches: [ main ]
 
 jobs:
-  run-api-tests:
-    runs-on: windows-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: 20
+          cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install dependencies (clean install)
         run: npm ci
 
-      - name: Run Newman tests
-        run: npm run test:api
-
-      - name: Upload HTML Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: newman-html-report
-          path: report.html
+      - name: Run tests
+        run: npm test
