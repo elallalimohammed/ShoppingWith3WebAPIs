@@ -27,17 +27,14 @@ jobs:
       # 4️⃣ Run collection from Postman API
       - name: Run Postman Collection
         env:
-          POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
-          COLLECTION_UID: ${{ secrets.POSTMAN_COLLECTION_UID }}
+            POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
+            COLLECTION_UID: ${{ secrets.POSTMAN_COLLECTION_UID }}
         run: |
-          mkdir -p results
-
-          COLLECTION_URL="https://api.getpostman.com/collections/${COLLECTION_UID}?apikey=${POSTMAN_API_KEY}"
-
-          newman run "$COLLECTION_URL" \
-            --reporters cli,junit,html \
-            --reporter-junit-export results/junit.xml \
-            --reporter-html-export results/report.html
+            New-Item -ItemType Directory -Force -Path results
+        
+            $collectionUrl = "https://api.getpostman.com/collections/$env:COLLECTION_UID?apikey=$env:POSTMAN_API_KEY"
+        
+            newman run $collectionUrl --reporters cli,junit,html --reporter-junit-export results/junit.xml --reporter-html-export results/report.html
 
       # 5️⃣ Upload test artifacts
       - name: Upload Newman results
