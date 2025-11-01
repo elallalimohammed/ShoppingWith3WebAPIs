@@ -2,43 +2,42 @@ name: Postman API Tests
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, develop ]  # Run on main and develop branches
   pull_request:
 
 jobs:
   postman-tests:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Step 2: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
+      # Step 3: Install Newman
       - name: Install Newman
         run: npm install -g newman
 
-      - name: Set environment variables dynamically
-        id: set_env
-        run: |
-          if [[ "${GITHUB_REF##*/}" == "main" ]]; then
-            echo "ENV_BASE_URL=https://api.production.com" >> $GITHUB_ENV
-          else
-            echo "ENV_BASE_URL=https://api.staging.com" >> $GITHUB_ENV
-          fi
+      # Step 4: Create results folder
+      - name: Prepare results folder
+        run: mkdir -p results
 
-      - name: Run Postman Collection with dynamic env
+      # Step 5: Run Postman Collection with Environment
+      - name: Run Postman Collection
         run: |
-          mkdir -p results
-          newman run ./collections/MyCollection.json \
-            --env-var baseUrl=$ENV_BASE_URL \
+          newman run ./collections/MyCollection.postman_collection.json \
+            -e ./collections/MyEnvironment.postman_environment.json \
             --reporters cli,junit,html \
             --reporter-junit-export results/junit.xml \
             --reporter-html-export results/report.html
 
+      # Step 6: Upload test results as artifacts
       - name: Upload test results
         uses: actions/upload-artifact@v4
         with:
