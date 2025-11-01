@@ -2,7 +2,7 @@ name: Postman API Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ]
   pull_request:
 
 jobs:
@@ -10,39 +10,36 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      # 1️⃣ Checkout repo
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Setup Node.js (required for Newman)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      # 3️⃣ Install Newman globally
       - name: Install Newman
         run: npm install -g newman
 
-      - name: Run Postman Collection
-        env:
-          POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
-          COLLECTION_UID: ${{ secrets.POSTMAN_COLLECTION_UID }}
+      - name: Set environment variables dynamically
+        id: set_env
         run: |
-          # Create results folder
-          New-Item -ItemType Directory -Force -Path results
+          if [[ "${GITHUB_REF##*/}" == "main" ]]; then
+            echo "ENV_BASE_URL=https://api.production.com" >> $GITHUB_ENV
+          else
+            echo "ENV_BASE_URL=https://api.staging.com" >> $GITHUB_ENV
+          fi
 
-          # Collection URL
-          $collectionUrl = "https://api.getpostman.com/collections/$env:COLLECTION_UID"
-      
-          # Run Newman with API key in header
-          newman run $collectionUrl `
-            --header 'X-Api-Key: '$env:POSTMAN_API_KEY `
-            --reporters cli,junit,html `
-            --reporter-junit-export results/junit.xml `
+      - name: Run Postman Collection with dynamic env
+        run: |
+          mkdir -p results
+          newman run ./collections/MyCollection.json \
+            --env-var baseUrl=$ENV_BASE_URL \
+            --reporters cli,junit,html \
+            --reporter-junit-export results/junit.xml \
             --reporter-html-export results/report.html
-     # 5️⃣ Upload test artifacts
-      - name: Upload Newman results
+
+      - name: Upload test results
         uses: actions/upload-artifact@v4
         with:
           name: postman-results
