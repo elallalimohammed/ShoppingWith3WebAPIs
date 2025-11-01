@@ -24,7 +24,6 @@ jobs:
       - name: Install Newman
         run: npm install -g newman
 
-      # 4️⃣ Run collection from Postman API
       - name: Run Postman Collection
         env:
           POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
@@ -33,15 +32,15 @@ jobs:
           # Create results folder
           New-Item -ItemType Directory -Force -Path results
 
-          # Collection URL without environment
+          # Collection URL
           $collectionUrl = "https://api.getpostman.com/collections/$env:COLLECTION_UID"
       
-          # Run Newman using header for API key
-          newman run $collectionUrl --header "X-Api-Key: $env:POSTMAN_API_KEY" `
+          # Run Newman with API key in header
+          newman run $collectionUrl `
+            --header 'X-Api-Key: '$env:POSTMAN_API_KEY `
             --reporters cli,junit,html `
             --reporter-junit-export results/junit.xml `
             --reporter-html-export results/report.html
-      
      # 5️⃣ Upload test artifacts
       - name: Upload Newman results
         uses: actions/upload-artifact@v4
