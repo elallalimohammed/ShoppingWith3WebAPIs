@@ -31,7 +31,7 @@ jobs:
       # Step 5: Run Postman Collection with Environment
       - name: Run Postman Collection
         run: |
-          newman run MyCollection.postman_collection.json \ -e MyEnvironment.postman_environment.json \ --reporters cli,html \ --reporter-html-export report.html
+          newman run MyCollection.postman_collection.json \ --reporters cli,html \ --reporter-html-export report.html
 
       # Step 6: Upload test results as artifacts
       - name: Upload test results
