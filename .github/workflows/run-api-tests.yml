@@ -1,4 +1,5 @@
-name: Postman tests (Newman from Postman API)
+name: Postman API Tests
+
 on:
   push:
     branches: [ main ]
@@ -6,32 +7,40 @@ on:
 
 jobs:
   postman-tests:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
+
     steps:
-      - name: Checkout repo
+      # 1️⃣ Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
 
+      # 2️⃣ Setup Node.js (required for Newman)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install newman
+      # 3️⃣ Install Newman globally
+      - name: Install Newman
         run: npm install -g newman
 
-      - name: Run collection from Postman (live)
+      # 4️⃣ Run collection from Postman API
+      - name: Run Postman Collection
         env:
           POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
           COLLECTION_UID: ${{ secrets.POSTMAN_COLLECTION_UID }}
-          ENV_UID: ${{ secrets.POSTMAN_ENV_UID }}
         run: |
-          # run the collection (collection and env fetched from Postman API)
-          newman run "https://api.getpostman.com/collections/${COLLECTION_UID}?apikey=${POSTMAN_API_KEY}" \
-            -e "https://api.getpostman.com/environments/${ENV_UID}?apikey=${POSTMAN_API_KEY}" \
+          mkdir -p results
+
+          COLLECTION_URL="https://api.getpostman.com/collections/${COLLECTION_UID}?apikey=${POSTMAN_API_KEY}"
+
+          newman run "$COLLECTION_URL" \
             --reporters cli,junit,html \
             --reporter-junit-export results/junit.xml \
             --reporter-html-export results/report.html
-      - name: Upload test artifacts
+
+      # 5️⃣ Upload test artifacts
+      - name: Upload Newman results
         uses: actions/upload-artifact@v4
         with:
           name: postman-results
