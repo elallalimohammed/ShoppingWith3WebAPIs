@@ -17,7 +17,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 8.0.x # match your version
+          dotnet-version: 8.0.x # match your .NET version
 
       # 3. Setup Node (for Newman)
       - name: Setup Node
@@ -37,13 +37,14 @@ jobs:
       - name: Start UsersWebAPI
         run: |
           dotnet run --project UsersWebAPI/UsersWebAPI.csproj &
-          sleep 10  # wait for API to start
+          echo "Waiting for API to start..."
+          sleep 15  # adjust if API takes longer to start
 
       # 7. Run Postman Collection using Newman
       - name: Run Postman Tests
         run: |
-          newman run ECommerceIntegrationTests.postman_collection.json \
-            -e ECommerceEnvironment_updated.postman_environment.json \
+          newman run postman/MyCollection.postman_collection.json \
+            -e postman/MyEnvironment.postman_environment.json \
             --reporters cli,junit \
             --reporter-junit-export newman-report.xml
 
