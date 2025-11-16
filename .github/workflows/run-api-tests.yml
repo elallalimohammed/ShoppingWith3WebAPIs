@@ -34,7 +34,7 @@ jobs:
           ls -la
       # 5. Build the entire solution
       - name: Build Solution
-        run: dotnet build ./src/ShoppingWith3WebAPI.sln --configuration Release
+        run: dotnet build ShoppingWith3WebAPIs.sln --configuration Release
 
       # 6. Run UsersWebAPI in background
       - name: Start UsersWebAPI
