@@ -31,7 +31,7 @@ jobs:
 
       # 5. Build the entire solution
       - name: Build Solution
-        run: dotnet build ShoppingMicroServicesApp.sln --configuration Release
+        run: dotnet build ShoppingWith3WebAPI.sln --configuration Release
 
       # 6. Run UsersWebAPI in background
       - name: Start UsersWebAPI
