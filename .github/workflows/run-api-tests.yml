@@ -28,7 +28,10 @@ jobs:
       # 4. Install Newman globally
       - name: Install Newman
         run: npm install -g newman
-
+      - name: Debug directory
+        run: |
+          pwd
+          ls -la
       # 5. Build the entire solution
       - name: Build Solution
         run: dotnet build ShoppingWith3WebAPI.sln --configuration Release
