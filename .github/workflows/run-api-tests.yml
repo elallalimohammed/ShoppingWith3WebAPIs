@@ -58,7 +58,10 @@ jobs:
             --reporters cli,junit \
             --reporter-junit-export newman-report.xml
 
-          echo "Running second collection..."
+          #echo "Running second collection..."
+      # 7_2. Run Postman Collection using Newman
+      - name: Run Postman Tests
+        run: |
           newman run postman/ECommerce_Tests.postman_collection.json\
             -e postman/E_commerce_Env.postman_environment.json\
             --reporters cli,junit \
