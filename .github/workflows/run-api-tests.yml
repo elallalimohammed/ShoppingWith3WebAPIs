@@ -50,7 +50,14 @@ jobs:
           echo "Waiting for APIs to start..."
           sleep 20  # adjust depending on how long your APIs take to start
 
-     
+     # 7. Run Postman Collection using Newman
+      - name: Run Postman Tests
+        run: |
+          newman run postman/MyCollection.postman_collection.json \
+            -e postman/MyEnvironment.postman_environment.json \
+            --reporters cli,junit \
+            --reporter-junit-export newman-report.xml
+
 
           #echo "Running second collection..."
       # 7_2. Run Postman Collection using Newman
