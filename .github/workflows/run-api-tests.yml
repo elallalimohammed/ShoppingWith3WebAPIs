@@ -1,41 +1,55 @@
-name: Postman API Tests
+# .github/workflows/api-ci.yml
+name: API Integration Tests
 
 on:
   push:
-    branches: [ main, develop ]  # Run on main and develop branches
   pull_request:
 
 jobs:
-  postman-tests:
-    runs-on: windows-latest
+  api-tests:
+    runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      # 1. Checkout the repo
+      - uses: actions/checkout@v4
 
-      # Step 2: Setup Node.js
-      - name: Setup Node.js
+      # 2. Setup .NET
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x # match your version
+
+      # 3. Setup Node (for Newman)
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      # Step 3: Install Newman
+      # 4. Install Newman globally
       - name: Install Newman
         run: npm install -g newman
 
-      # Step 4: Create results folder
-      - name: Prepare results folder
-        run: mkdir -p results
+      # 5. Build the entire solution
+      - name: Build Solution
+        run: dotnet build ShoppingMicroServicesApp.sln --configuration Release
 
-      # Step 5: Run Postman Collection with Environment
-      - name: Run Postman Collection
+      # 6. Run UsersWebAPI in background
+      - name: Start UsersWebAPI
         run: |
-          newman run MyCollection.postman_collection.json \ --reporters cli,html \ --reporter-html-export report.html
+          dotnet run --project UsersWebAPI/UsersWebAPI.csproj &
+          sleep 10  # wait for API to start
 
-      # Step 6: Upload test results as artifacts
-      - name: Upload test results
+      # 7. Run Postman Collection using Newman
+      - name: Run Postman Tests
+        run: |
+          newman run ECommerceIntegrationTests.postman_collection.json \
+            -e ECommerceEnvironment_updated.postman_environment.json \
+            --reporters cli,junit \
+            --reporter-junit-export newman-report.xml
+
+      # 8. Upload test report (optional)
+      - name: Upload Newman Test Report
         uses: actions/upload-artifact@v4
         with:
-          name: postman-results
-          path: results/
+          name: newman-report
+          path: newman-report.xml
