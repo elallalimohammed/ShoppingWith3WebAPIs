@@ -83,7 +83,7 @@
 					"raw": "{\n  \"name\": \"Jane Smith\",\n  \"email\": \"jane.smith@example.com\"\n}"
 				},
 				"url": {
-					"raw": "/users",
+					"raw": "{{MockBase}}/users",
 					"path": [
 						"users"
 					]
@@ -105,7 +105,7 @@
 							"raw": "{\n  \"name\": \"Jane Smith\",\n  \"email\": \"jane.smith@example.com\"\n}"
 						},
 						"url": {
-							"raw": "/users",
+							"raw": "{{MockBase}}/users",
 							"path": [
 								"users"
 							]
@@ -126,7 +126,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "/products",
+					"raw": "{{MockBase}}/products",
 					"path": [
 						"products"
 					]
@@ -139,7 +139,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "/products",
+							"raw": "{{MockBase}}/products",
 							"path": [
 								"products"
 							]
@@ -160,7 +160,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://56ad7b7f-3550-4c86-999b-b5ae77b00a7f.mock.pstmn.io/status",
+					"raw": "{{MockBase}}/status",
 					"protocol": "https",
 					"host": [
 						"56ad7b7f-3550-4c86-999b-b5ae77b00a7f",
@@ -180,7 +180,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://56ad7b7f-3550-4c86-999b-b5ae77b00a7f.mock.pstmn.io/status",
+							"raw": "{{MockBase}}/status",
 							"protocol": "https",
 							"host": [
 								"56ad7b7f-3550-4c86-999b-b5ae77b00a7f",
