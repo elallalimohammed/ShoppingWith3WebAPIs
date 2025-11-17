@@ -1,0 +1,15 @@
+{
+	"id": "db036d22-9a26-4d67-9939-83d468e34eaa",
+	"name": "MockEnv",
+	"values": [
+		{
+			"key": "MockBase",
+			"value": "https://56ad7b7f-3550-4c86-999b-b5ae77b00a7f.mock.pstmn.io",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-11-17T19:10:26.332Z",
+	"_postman_exported_using": "Postman/11.71.3"
+}
