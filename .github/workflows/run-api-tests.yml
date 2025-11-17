@@ -57,10 +57,15 @@ jobs:
             -e postman/MyEnvironment.postman_environment.json \
             --reporters cli,junit \
             --reporter-junit-export newman-report.xml
-
-
+       
+       #echo "Running collection  mock server..."
+      - name: Run Newman Tests
+        run: |
+          newman run tests/postman_collection.json \
+            --env-var MOCK_URL=https://56ad7b7f-3550-4c86-999b-b5ae77b00a7f.mock.pstmn.io
+          
           #echo "Running second collection..."
-      # 7_2. Run Postman Collection using Newman
+        # 7_2. Run Postman Collection using Newman
       - name: Run Postman Tests
         run: |
           newman run postman/ECommerce_Tests.postman_collection.json\
